@@ -64,13 +64,30 @@ a{
     display: none;
   }
   img#me{
-    width: 200%;
-  height: auto;
+  visibilty:hidden;
   }
   div#nav{
     display:none;
   }
+  div#div2{
+    visibility:visible;
+  }
+  img#formobile{
+    visibility:visible;
+  }
+  img#memobile{
+    visibility:visible;
+  }
 }
+ @media (min-width:650px){
+   img#formobile{
+     visibility:hidden;
+   }
+   img#memobile{
+    visibility:hidden;
+  }
+      }
+      
     </style>
   </head>
   <body>
@@ -100,7 +117,7 @@ a{
 
     If you want to know more about my academic research, look below. </em> </p>
      
-   <div class="split2">
+   <div id="div2" class="split2">
       <div> <img id="me" src="me.jpg" style="max-width: 220px; height: auto;" > 
       </div>
      
@@ -110,7 +127,11 @@ a{
       <div class="clearer"> 
      </div>
 </div><br clear="all">
-   
+    
+    <div id="formobile">
+    <img id="memobile" src="me.jpg" style="max-width: 220px; height: auto;" >
+    </div><br clear="all">
+    
     <h3></h3>
     <p align="justify"> Since October 2020, I am a PhD Candidate at the Technical University of Vienna in the 
       <a href="https://logic-cs.at/"> LogiCS </a> Doctoral School, under the supervision of 
